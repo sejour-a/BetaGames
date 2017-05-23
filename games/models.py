@@ -20,7 +20,7 @@ class Game(models.Model):
     description_full = models.TextField(default="Description avancée")
     icon = models.ImageField(upload_to='game_icon/', null=True, blank=True)
 
-    consoles = models.ManyToManyField(Console, blank=True, null=True)
+    consoles = models.ManyToManyField(Console, blank=True)
 
     def __str__(self):
         return self.title

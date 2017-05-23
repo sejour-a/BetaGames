@@ -59,3 +59,5 @@ target/
 
 # IDE settings folder
 .idea/
+
+*.sqlite3
