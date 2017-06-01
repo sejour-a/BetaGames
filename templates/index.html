@@ -9,7 +9,7 @@
 
     <meta content="BetaGames" property="og:site_name">
     <meta content="object" property="og:type">
-    <meta content="BetaGames" property="og:title">
+    <meta content="Accueil" property="og:title">
     <meta content="https://BetaGames.eu/" property="og:url">
     <meta content="La plateforme pour partager et prévoir vos expériences vidéoludiques!" property="og:description">
 
@@ -18,6 +18,8 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'spectre.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'spectre-icons.css' %}" />
+    {% load i18n %}
+    {% get_current_language as LANGUAGE_CODE %}
 </head>
 
 <body>
@@ -28,7 +30,7 @@
                 <span class="card-title">BetaGames</span>
             </div>
             <div class="card-body">
-                Site en construction
+                {% trans "message" %}
             </div>
           </div>
     </section>
