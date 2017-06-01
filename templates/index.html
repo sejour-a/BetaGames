@@ -21,6 +21,8 @@
     {% load i18n %}
     {% get_current_language as LANGUAGE_CODE %}
     {% get_available_languages as LANGUAGES %}
+
+    {% language fav_lang %}
 </head>
 
 <body>
@@ -35,20 +37,11 @@
 
                 <br>
 
-                {{ LANGUAGE_CODE }}
+                fav_lang == {{ fav_lang }}
             </div>
         </div>
-
-        {% for lang_code, lang_name in LANGUAGES %}
-            {% language lang_code %}
-                <div class="card text-center">
-                    <div class="card-body">
-                        {% trans lang_name %}
-                    </div>
-                </div>
-            {% endlanguage %}
-        {% endfor %}
-
     </section>
 </section>
 </body>
+
+{% endlanguage %}
