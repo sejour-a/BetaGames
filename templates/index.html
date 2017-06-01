@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 
 <head>
+    {% load i18n %}
+    {% load static %}
+
     <meta charset="UTF-8">
     <meta name="author" content="https://github.com/sejour-a/" />
-    <meta name="description" content="La plateforme pour partager et prévoir vos expériences vidéoludiques!">
+    <meta name="description" content= {% trans "description" %}>
     <meta name="keywords" content="games,game,jeu,jeux,vidéoludique,partage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta content="BetaGames" property="og:site_name">
     <meta content="object" property="og:type">
-    <meta content="Accueil" property="og:title">
+    <meta content= {% trans "Home" %} property="og:title">
     <meta content="https://BetaGames.eu/" property="og:url">
-    <meta content="La plateforme pour partager et prévoir vos expériences vidéoludiques!" property="og:description">
+    <meta content={% trans "description" %} property="og:description">
 
     <title>BetaGames</title>
 
-    {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'spectre.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'spectre-icons.css' %}" />
-    {% load i18n %}
     {% get_current_language as LANGUAGE_CODE %}
     {% get_available_languages as LANGUAGES %}
 

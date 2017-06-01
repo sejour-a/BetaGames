@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.0.1\n"
-"Report-Msgid-Bugs-To: alex.sejournant@gmail.com\n"
-"POT-Creation-Date: 2017-06-01 12:12+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-01 16:43+0200\n"
 "PO-Revision-Date: 2017-06-01 12:15+0200\n"
 "Last-Translator: Alexandre SEJOURNANT <alex.sejournant@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: BetaGames/settings.py:92
-msgid "English"
-msgstr "Anglais"
-
 #: BetaGames/settings.py:93
 msgid "French"
 msgstr "Français"
 
-#: templates/index.html:33
+#: BetaGames/settings.py:94
+msgid "English"
+msgstr "Anglais"
+
+#: templates/index.html:9 templates/index.html:17
+msgid "description"
+msgstr "Une plateforme opensource pour le partage d'expériences vidéoludiques."
+
+#: templates/index.html:15
+msgid "Home"
+msgstr "Accueil"
+
+#: templates/index.html:37
 msgid "message"
 msgstr "Site en construction."
