@@ -6,4 +6,4 @@ Betagames! Like betaseries, but for games!
 
 ... or at least that's the idea.
 
-I'll do all that in my free time, I'm not taken doan for copyright stuff.
+I'll do all that in my free time, if I'm not taken down for copyright stuff.
